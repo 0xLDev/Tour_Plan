@@ -1,0 +1,585 @@
+@media (max-width: 1200px)
+    .container 
+        max-width: 960px
+    .hotel-slider
+        width: 590px
+    .hotel
+        &-slider
+            &__image
+                width: 100%
+                height: 100%
+                object-fit: cover
+    .card
+       width: 230px
+       height: 230px 
+    .footer
+        &-wrapper
+            grid-template-columns: minmax(min-content, 190px) repeat(2, 1.5fr) minmax(min-content, 190px)
+            grid-gap: 0 10px
+            grid-template-rows: repeat(3, minmax(45px, max-content)) minmax(65px, max-content)
+        &__input
+            flex-basis: 100%
+        &__message
+            flex-basis: 100%
+        &_logo
+            width: 98px
+        &__social
+            &-network
+                align-self: center   
+@media (max-width: 992px)
+    .container, 
+    .newsletter-wrapper
+        max-width: 700px
+    .logo
+        width: 104px   
+    .navbar
+        &-top
+            padding-top: 30px
+            padding-bottom: 30px
+        &__search
+            margin-left: auto
+        &-menu
+            padding-top: 22px
+            padding-bottom: 22px
+            &__link
+                font-size: 12px
+                line-height: 15px      
+    .search
+        &__input
+            width: 340px
+    .hotel
+        &-grid
+            flex-direction: column
+        &__slider
+            margin-bottom: 30px
+        &-right
+            flex-direction: row
+        &-slider
+            width: 100%    
+    .booking
+        width: 340px                
+    .map
+        width: 340px
+    .reviews
+        padding: 40px 0 90px 0
+        &-slider
+            &__item
+                max-width: 580px
+            &__profile
+                margin-bottom: 32px    
+        &__title
+            margin-bottom: 50px
+    .activities
+        padding: 60px 0 70px 0;
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px    
+    .card
+       width: 340px
+       height: 250px
+    .footer
+        &-wrapper
+            grid-template-columns: minmax(min-content, 2fr) repeat(2, 1.5fr) minmax(min-content, 2fr)
+            grid-template-rows: repeat(2, minmax(30px, max-content)) repeat(2, minmax(45px, max-content))
+            grid-gap: 0
+        &__title
+            &--inline
+                margin: 0 40px 0  0
+        &-list
+            grid-column: 1 / 4
+            justify-self: start
+        &__input
+            &-group
+                flex-basis: 49%
+        &__logo
+            grid-row: 1 / 2 
+            grid-column: 1 / 2
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: 2 / 4
+                justify-self: center
+        &__categories
+            grid-row: 3 / 4
+            grid-column: 1 / 2   
+        &__legal
+            grid-row: 3 / 4
+            grid-column: 4 / 5    
+        &__additional
+            grid-row: 3 / 4
+            grid-column: 2 / 4
+            justify-self: center
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 5 / 6
+            &-form
+                width: 540px
+                grid-column: span 5
+                grid-row: 7 / 8
+        &-bottom
+            margin-top: 63px                    
+@media (max-width: 768px)
+    .container
+        width: 92%
+    .navbar
+        &-top
+            padding-top: 30px
+            padding-bottom: 30px
+        &__search
+            margin-left: auto
+        &-menu
+            padding-top: 22px
+            padding-bottom: 22px
+            &__link
+                font-size: 12px
+                line-height: 15px
+    .search
+        &__input
+            width: 340px
+    .reviews
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase        
+@media (max-width: 760px)
+    .logo
+        width: 99px
+    .menu
+        &-button
+            display: flex
+            width: 16px
+            height: 11px
+            padding: 0
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: #fff
+            cursor: pointer
+            outline: none
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $text-color
+    .user
+        &__name
+            &_light
+                color: $light
+                margin-left: 0
+                margin-top: 10px            
+    .stars
+        flex-basis: auto
+    .hotel
+        &-name
+            flex-basis: 100%
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0    
+            &__rating
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0                
+    body
+        padding-top: 78px
+    .navbar
+        &--mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__user, &__search
+            &_mobile
+                &_hidden
+                    display: none
+                &_visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-bottom
+            display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 78px
+            padding-top: 30px
+            &--visible
+                display: block
+                overflow: scroll
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
+                &_mobile
+                    &_visible
+                        display: block                              
+    .hotel
+        &-right
+            flex-direction: column
+            min-height: 450px
+        &-slider
+            height: 350px
+    .modal
+        &__dialog
+            &--visible
+                width: 85%
+                padding: 33px 30px
+        &__info
+            flex-basis: 100%;
+            margin-bottom: 15px
+        &__button
+            order: 2    
+    .booking
+        width: 100%
+    .map
+        width: 100%
+    .newsletter
+        background-image: url(../img/newsletter-tablet.jpg)
+        &-wrapper
+            max-width: 576px
+            width: 92%
+            flex-direction: column
+            align-items: flex-start
+    .reviews 
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                &:after, &:before
+                    display: none
+            &__button
+                 top: 45px    
+                 &--prev
+                     left: 50%
+                     margin-left: -30%
+                 &--next
+                     right: 50%
+                     margin-right: -30% 
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px                 
+    .card
+       width: 49%
+       height: 255px
+    .footer
+        padding: 69px 0 21px
+        &-list
+            grid-column: 1 / 5 
+        &__input
+            &-group
+                flex-basis: 49% 
+        &-wrapper
+            grid-template-columns: repeat(4, 1fr)
+            grid-template-rows: repeat(9, minmax(30px, max-content)) repeat(2, minmax(40px, max-content)) repeat(2, minmax(60px, max-content))
+        &__logo
+            grid-row: 1
+            grid-column: span 4
+        &__social
+            &-network
+                grid-row: 3 / 4
+                grid-column: 1 / 5
+                justify-self: start
+        &__additional
+            grid-row: 7 / 8
+            grid-column: 1 / 5
+            justify-self: start
+        &__categories
+            grid-row: 9 / 10
+            grid-column: 1 / 5
+        &__legal
+            grid-row: 5 / 6
+            grid-column: 1 / 5
+            margin-left: 0
+        &__button
+            order: 2
+        &__info
+            flex-basis: 100%
+            margin-bottom: 15px    
+        &__contact
+            &-details
+                grid-row: 11 / 12
+                grid-column: 1 / 5
+            &-form
+                width: 100%
+                grid-row: 13 / 14
+                grid-column: 1 / 5
+        &__message
+            margin-bottom: 15px
+        &-system
+            grid-column: 1 / 5
+            margin-top: 10px
+            justify-self: start
+        &-bottom
+            margin-top: 30px                                                                             
+@media (max-width: 576px)
+    button,a
+        cursor: none
+    .logo
+        width: 99px
+    .hotel
+        &__slider
+            margin-bottom: 20px
+        &-slider
+            height: 250px    
+    .newsletter
+        padding: 76px 0 83px 0
+        &__title
+            margin-bottom: 37px
+    .subscribe
+        width: 100%
+        &__button
+            left: auto
+            right: 0 
+    .reviews
+        &__title
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 23px
+                text-align: center
+                text-transform: uppercase     
+    .card
+       width: 100%
+    .footer
+        &__input
+            flex-basis: 100%
+        &__social
+            &-network
+                display: flex
+                min-height: 67px
+                flex-direction: column
+                justify-content: space-between
+                align-items: start     
+@media (max-width: 325px)
+    .container
+        width: 88%
+    .footer
+        &-list
+            min-width: 100%
+    .navbar
+        &__search
+            &_mobile
+                &_visible
+                    width: 245px
+    .newsletter
+        width: 320px
+        background-image: url(../img/newsletter-mobile.jpg)
+        &-title
+            margin-bottom: 37px
+    .reviews
+        &__title
+            margin-bottom: 42px
+        &-slider
+            &__rating
+                margin-bottom: 32px
+    .activities
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+@media (max-height: 487px)
+    .modal
+        &__dialog
+            height: 100%
+            overflow: scroll
+                
+@media (max-width: 376px)
+    .navbar
+        &__search
+            &_mobile
+                &_visible
+                    width: 245px
+    .newsletter
+        &-title
+            margin-bottom: 37px
+    .reviews
+        &__title
+            margin-bottom: 42px
+        &-slider
+            &__rating
+                margin-bottom: 32px
+    .activities
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0
+@media (max-width: 375px)
+    .navbar
+        &__search
+            &_mobile
+                &_visible
+                    width: 245px
+    .newsletter
+        &-title
+            margin-bottom: 37px
+    .reviews
+        &__title
+            margin-bottom: 42px
+        &-slider
+            &__rating
+                margin-bottom: 32px
+    .activities
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0           
+@media (min-width: 360px)
+    .newsletter
+        &-title
+            margin-bottom: 37px
+    .reviews
+        &__title
+            margin-bottom: 42px
+        &-slider
+            &__rating
+                margin-bottom: 32px
+    .activities
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px 
+@media (max-width: 380px)
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0
+@media (max-width: 396px)
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0
+@media (max-width: 398px)
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0
+@media (max-width: 435px)
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0
+@media (max-width: 449px)
+    .subscribe
+        &__button
+            position: absolute
+            min-width: 65px
+            left: auto
+            right: 0
+            top: 0
+            height: 100%
+            border: none
+            background-color: #EC1F46
+            color: #fff
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            border-radius: 0 4px 4px 0                                                                          
+                                    
+
+
+                                      
+                                 
+
+                    
