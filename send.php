@@ -30,7 +30,7 @@ if ($name) {
     <h2>Новая подписка</h2>
     <b>Почта:</b><br>$emailNews
     <br>
-    "; 
+    ";
 } else {
     $title = "Новое обращение Best Tour Plan";
     $body = "
@@ -40,13 +40,13 @@ if ($name) {
     <b>Почта:</b>  $modalEmail<br><br>
     <b>Сообщение:</b><br>$modalMessage
     <br>
-    "; 
+    ";
 }
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $mail->isSMTP();   
+    $mail->isSMTP();
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
     //$mail->SMTPDebug = 2;
@@ -54,22 +54,22 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'alexander.davydov.web@gmail.com'; // Логин на почте
-    $mail->Password   = 'Crazy!23'; // Пароль на почте
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('alexander.davydov.web@gmail.com', 'Александр Давыдов'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', ''); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('d3ewoo@yandex.ru');
+    $mail->addAddress('');
 
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    $mail->Body = $body;
 
     // Проверяем отравленность сообщения
-    if ($mail->send()) {$result = "success";} 
+    if ($mail->send()) {$result = "success";}
     else {$result = "error";}
 
     } catch (Exception $e) {
@@ -80,9 +80,9 @@ try {
 // Отображение результата
 //header('Location: thankyou.html');
 if ($name) {
-    header('Location: thankyou.html'); 
+    header('Location: thankyou.html');
 } else {
-    header('Location: subscribe.html'); 
+    header('Location: subscribe.html');
 }
 if ($modalName) {
 	header('Location: thankyou.html');
